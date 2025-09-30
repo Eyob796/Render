@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: belaynish-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    routes:
+      - type: web
+        source: /
+    region: oregon
